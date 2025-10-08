@@ -54,7 +54,7 @@ const Hero = () => {
               size="lg"
               onClick={() => scrollToSection("contact")}
               variant="outline"
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10"
+              className="border-primary-foreground text-primary-foreground bg-primary-foreground/10 hover:bg-primary-foreground/20"
             >
               Contact Us
             </Button>
@@ -74,21 +74,21 @@ const Hero = () => {
 
             <div className="flex items-center space-x-3 bg-card/10 backdrop-blur-sm p-4 rounded-lg border border-primary-foreground/20">
               <div className="bg-secondary/20 p-3 rounded-lg">
-                <TrendingUp className="h-6 w-6 text-secondary" />
+                <Award className="h-6 w-6 text-secondary" />
               </div>
               <div>
-                <div className="text-2xl font-bold text-primary-foreground">30+</div>
-                <div className="text-sm text-primary-foreground/70">Trades Yearly</div>
+                <div className="text-2xl font-bold text-primary-foreground">4</div>
+                <div className="text-sm text-primary-foreground/70">Global Services</div>
               </div>
             </div>
 
             <div className="flex items-center space-x-3 bg-card/10 backdrop-blur-sm p-4 rounded-lg border border-primary-foreground/20">
               <div className="bg-secondary/20 p-3 rounded-lg">
-                <Award className="h-6 w-6 text-secondary" />
+                <TrendingUp className="h-6 w-6 text-secondary" />
               </div>
               <div>
                 <div className="text-2xl font-bold text-primary-foreground">30+</div>
-                <div className="text-sm text-primary-foreground/70">Years Experience</div>
+                <div className="text-sm text-primary-foreground/70">Trades Yearly</div>
               </div>
             </div>
           </div>

@@ -73,8 +73,8 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-secondary/10 p-3 rounded-lg">
-                    <MapPin className="h-6 w-6 text-secondary" />
+                  <div className="bg-primary/10 p-3 rounded-lg">
+                    <MapPin className="h-6 w-6 text-primary" />
                   </div>
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">Location</h4>

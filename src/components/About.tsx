@@ -74,8 +74,8 @@ const About = () => {
           </Card>
 
           <Card className="p-6 hover:shadow-elegant transition-shadow duration-300 border-border">
-            <div className="bg-secondary/10 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
-              <Award className="h-7 w-7 text-secondary" />
+            <div className="bg-primary/10 w-14 h-14 rounded-lg flex items-center justify-center mb-4">
+              <Award className="h-7 w-7 text-primary" />
             </div>
             <h4 className="text-xl font-semibold mb-3 text-foreground">Quality Standards</h4>
             <p className="text-muted-foreground">

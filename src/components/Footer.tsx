@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
-            <div className="font-display font-bold text-2xl mb-4 text-secondary">
+            <div className="font-display font-bold text-2xl mb-4 text-primary-foreground">
               D.P.I
             </div>
             <p className="text-primary-foreground/80 mb-4">
