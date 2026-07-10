@@ -20,7 +20,7 @@ const Footer = () => {
               D.P.I
             </div>
             <p className="text-primary-foreground/80 mb-4">
-              Leading commodity trading company specializing in petroleum products, fertilizers, and petrochemicals.
+              Leading petroleum trading company specializing in petroleum products, fertilizers, and petrochemicals.
             </p>
             <div className="flex space-x-4">
               <a
