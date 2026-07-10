@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-import { Package, Factory, Truck, HeadphonesIcon } from "lucide-react";
+import { Package, Truck, HeadphonesIcon } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -9,17 +9,6 @@ const Services = () => {
       description:
         "Integrated petroleum trading services with comprehensive and tailor-made business solutions for a wide range of customers. We offer top-quality products in the Agro industry with quality as our utmost priority.",
       features: ["Agricultural inputs", "Petrochemicals", "Fertilizers"],
-    },
-    {
-      icon: Factory,
-      title: "Raw Materials & Production",
-      description:
-        "We provide raw materials entering the agricultural and organic agricultural inputs production from the most trustable sources in the world with quality insurance always.",
-      features: [
-        "Fertilizers raw materials",
-        "Pesticides raw materials",
-        "Production line equipment",
-      ],
     },
     {
       icon: Truck,
