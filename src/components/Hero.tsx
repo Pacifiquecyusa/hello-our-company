@@ -27,7 +27,7 @@ const Hero = () => {
         <div className="max-w-4xl">
           <div className="inline-block mb-6 px-4 py-2 bg-secondary/20 backdrop-blur-sm rounded-full border border-secondary/30">
             <span className="text-secondary font-semibold text-sm">
-              Leading Energy & Commodity Trading Since 1995
+              Leading Energy & Petroleum Trading Since 1995
             </span>
           </div>
 
@@ -37,7 +37,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 max-w-2xl">
-            DME Petroleum & Investment is a leading commodity trading company based in Dubai,
+            DME Petroleum & Investment is a leading petroleum trading company based in Dubai,
             specializing in petroleum products, fertilizers, and petrochemicals across 4 continents.
           </p>
 

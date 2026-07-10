@@ -5,9 +5,9 @@ const Services = () => {
   const services = [
     {
       icon: Package,
-      title: "Commodity Trading",
+      title: "Petroleum Trading",
       description:
-        "Integrated commodity trading services with comprehensive and tailor-made business solutions for a wide range of customers. We offer top-quality products in the Agro industry with quality as our utmost priority.",
+        "Integrated petroleum trading services with comprehensive and tailor-made business solutions for a wide range of customers. We offer top-quality products in the Agro industry with quality as our utmost priority.",
       features: ["Agricultural inputs", "Petrochemicals", "Fertilizers"],
     },
     {

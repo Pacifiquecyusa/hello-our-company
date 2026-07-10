@@ -68,7 +68,7 @@ const About = () => {
             </div>
             <h4 className="text-xl font-semibold mb-3 text-foreground">Our Vision</h4>
             <p className="text-muted-foreground">
-              To be the leading global commodity trading partner, recognized for excellence, innovation, and
+              To be the leading global petroleum trading partner, recognized for excellence, innovation, and
               sustainable business practices.
             </p>
           </Card>
