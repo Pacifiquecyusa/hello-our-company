@@ -124,8 +124,17 @@ const Products = () => {
 
           {productCategories.map((category) => (
             <TabsContent key={category.id} value={category.id} className="mt-8">
-              <Card className="p-8 md:p-12 border-border">
-                <div className="flex flex-col md:flex-row gap-8">
+              <Card className="overflow-hidden border-border">
+                <img
+                  src={category.image}
+                  alt={`${category.title} supplied by DME Petroleum & Investment`}
+                  loading="lazy"
+                  width={960}
+                  height={640}
+                  className="w-full h-56 md:h-72 object-cover"
+                />
+                <div className="flex flex-col md:flex-row gap-8 p-8 md:p-12">
+
                   <div className="md:w-1/3">
                     <div className="bg-gradient-primary p-6 rounded-lg inline-block mb-4">
                       <category.icon className="h-12 w-12 text-primary-foreground" />
