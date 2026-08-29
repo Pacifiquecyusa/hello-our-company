@@ -1,5 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Target, Eye, Award, Users } from "lucide-react";
+import facilityImage from "@/assets/about-facility.jpg";
+
 
 const About = () => {
   return (
