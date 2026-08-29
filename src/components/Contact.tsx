@@ -35,11 +35,23 @@ const Contact = () => {
           </p>
         </div>
 
+        <div className="mb-12 overflow-hidden rounded-lg shadow-elegant">
+          <img
+            src={dubaiImage}
+            alt="Dubai business district where DME Petroleum & Investment is headquartered"
+            loading="lazy"
+            width={1280}
+            height={720}
+            className="w-full h-56 md:h-80 object-cover"
+          />
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
           <div className="space-y-6">
             <Card className="p-8 border-border">
               <h3 className="text-2xl font-bold mb-6 text-foreground">
+
                 Contact Information
               </h3>
 
