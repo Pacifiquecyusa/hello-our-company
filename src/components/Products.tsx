@@ -2,6 +2,12 @@ import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Plane, Droplet, Fuel, Zap, Settings } from "lucide-react";
 import productsImage from "@/assets/products-bg.jpg";
+import aviationImage from "@/assets/prod-aviation.jpg";
+import gasImage from "@/assets/prod-gas.jpg";
+import dieselImage from "@/assets/prod-diesel.jpg";
+import oilsImage from "@/assets/prod-oils.jpg";
+import facilityImage from "@/assets/about-facility.jpg";
+import portImage from "@/assets/logistics-port.jpg";
 
 const Products = () => {
   const productCategories = [
@@ -9,6 +15,7 @@ const Products = () => {
       id: "aviation",
       title: "Aviation Fuel",
       icon: Plane,
+      image: aviationImage,
       description:
         "Specialized petroleum-based fuel used to power aircraft. Generally of higher quality than fuels used in less critical applications.",
       products: [
@@ -21,6 +28,7 @@ const Products = () => {
       id: "crude",
       title: "Crude Hydrocarbons",
       icon: Droplet,
+      image: gasImage,
       description:
         "High-quality hydrocarbons for the emerging global natural gas market with diverse applications.",
       products: [
@@ -34,6 +42,7 @@ const Products = () => {
       id: "heavy",
       title: "Heavy Petroleum Products",
       icon: Fuel,
+      image: facilityImage,
       description:
         "Fuel oil supply for bunkers, power generation, and refinery feedstocks.",
       products: [
@@ -48,6 +57,7 @@ const Products = () => {
       id: "light",
       title: "Light Petroleum Products",
       icon: Zap,
+      image: dieselImage,
       description:
         "Low emission, environmentally clean diesel and gasoline products suitable for modern engines.",
       products: [
@@ -62,6 +72,7 @@ const Products = () => {
       id: "oils",
       title: "Petroleum Oil",
       icon: Settings,
+      image: oilsImage,
       description:
         "Industrial petroleum oils for various applications, helping improve equipment life and performance.",
       products: [
@@ -73,6 +84,7 @@ const Products = () => {
       ],
     },
   ];
+
 
   return (
     <section id="products" className="py-20 bg-background relative overflow-hidden">
@@ -112,8 +124,17 @@ const Products = () => {
 
           {productCategories.map((category) => (
             <TabsContent key={category.id} value={category.id} className="mt-8">
-              <Card className="p-8 md:p-12 border-border">
-                <div className="flex flex-col md:flex-row gap-8">
+              <Card className="overflow-hidden border-border">
+                <img
+                  src={category.image}
+                  alt={`${category.title} supplied by DME Petroleum & Investment`}
+                  loading="lazy"
+                  width={960}
+                  height={640}
+                  className="w-full h-56 md:h-72 object-cover"
+                />
+                <div className="flex flex-col md:flex-row gap-8 p-8 md:p-12">
+
                   <div className="md:w-1/3">
                     <div className="bg-gradient-primary p-6 rounded-lg inline-block mb-4">
                       <category.icon className="h-12 w-12 text-primary-foreground" />
@@ -159,6 +180,19 @@ const Products = () => {
                 Operating across 4 continents with strategic partnerships and storage facilities
               </p>
             </div>
+
+            <div className="overflow-hidden rounded-lg mb-8">
+              <img
+                src={portImage}
+                alt="Cargo vessel loading at an international port terminal"
+                loading="lazy"
+                width={1280}
+                height={860}
+                className="w-full h-56 md:h-80 object-cover"
+              />
+            </div>
+
+
 
             <div className="grid md:grid-cols-2 gap-8">
               <div>

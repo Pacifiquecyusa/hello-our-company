@@ -1,10 +1,14 @@
 import { Card } from "@/components/ui/card";
 import { Package, Truck, HeadphonesIcon } from "lucide-react";
+import tradingImage from "@/assets/trading-trucks.jpg";
+import portImage from "@/assets/logistics-port.jpg";
+import facilityImage from "@/assets/about-facility.jpg";
 
 const Services = () => {
   const services = [
     {
       icon: Package,
+      image: tradingImage,
       title: "Petroleum Trading",
       description:
         "Integrated petroleum trading services with comprehensive and tailor-made business solutions for a wide range of customers. We offer top-quality products in the Agro industry with quality as our utmost priority.",
@@ -12,6 +16,7 @@ const Services = () => {
     },
     {
       icon: Truck,
+      image: portImage,
       title: "Logistics & Finance",
       description:
         "Comprehensive logistics and financing solutions to support your business operations. We ensure timely deliveries and provide flexible financial arrangements.",
@@ -23,6 +28,7 @@ const Services = () => {
     },
     {
       icon: HeadphonesIcon,
+      image: facilityImage,
       title: "Customer Satisfaction",
       description:
         "Our professional team listens to clients and helps them make profitable business decisions. We cater to all business needs with personalized service and support.",
@@ -33,6 +39,7 @@ const Services = () => {
       ],
     },
   ];
+
 
   return (
     <section id="services" className="py-20 bg-muted/30">
@@ -51,9 +58,18 @@ const Services = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="p-8 hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 border-border"
+              className="overflow-hidden hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 border-border"
             >
-              <div className="flex items-start space-x-4">
+              <img
+                src={service.image}
+                alt={`${service.title} - DME Petroleum & Investment`}
+                loading="lazy"
+                width={1280}
+                height={860}
+                className="w-full h-52 object-cover"
+              />
+              <div className="flex items-start space-x-4 p-8">
+
                 <div className="bg-gradient-primary p-4 rounded-lg shrink-0">
                   <service.icon className="h-8 w-8 text-primary-foreground" />
                 </div>
