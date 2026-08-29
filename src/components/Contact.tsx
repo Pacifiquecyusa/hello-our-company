@@ -5,6 +5,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { Mail, Phone, MapPin, Globe } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+import dubaiImage from "@/assets/dubai-hq.jpg";
+
 
 const Contact = () => {
   const [formData, setFormData] = useState({
