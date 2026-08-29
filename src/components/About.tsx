@@ -36,7 +36,18 @@ const About = () => {
           </div>
 
           <div className="space-y-6">
+            <div className="overflow-hidden rounded-lg border border-border shadow-elegant">
+              <img
+                src={facilityImage}
+                alt="Petroleum storage tank farm and pipelines operated by DME Petroleum"
+                loading="lazy"
+                width={1280}
+                height={860}
+                className="w-full h-64 object-cover hover:scale-105 transition-transform duration-500"
+              />
+            </div>
             <p className="text-muted-foreground leading-relaxed">
+
               Our prime focus is on the upstream and downstream of the commodities industry, by which we make smart
               investment strategies to promote the growth and development of the Agricultural industry.
             </p>
