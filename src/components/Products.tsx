@@ -2,6 +2,12 @@ import { Card } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Plane, Droplet, Fuel, Zap, Settings } from "lucide-react";
 import productsImage from "@/assets/products-bg.jpg";
+import aviationImage from "@/assets/prod-aviation.jpg";
+import gasImage from "@/assets/prod-gas.jpg";
+import dieselImage from "@/assets/prod-diesel.jpg";
+import oilsImage from "@/assets/prod-oils.jpg";
+import facilityImage from "@/assets/about-facility.jpg";
+import portImage from "@/assets/logistics-port.jpg";
 
 const Products = () => {
   const productCategories = [
@@ -9,6 +15,7 @@ const Products = () => {
       id: "aviation",
       title: "Aviation Fuel",
       icon: Plane,
+      image: aviationImage,
       description:
         "Specialized petroleum-based fuel used to power aircraft. Generally of higher quality than fuels used in less critical applications.",
       products: [
@@ -21,6 +28,7 @@ const Products = () => {
       id: "crude",
       title: "Crude Hydrocarbons",
       icon: Droplet,
+      image: gasImage,
       description:
         "High-quality hydrocarbons for the emerging global natural gas market with diverse applications.",
       products: [
@@ -34,6 +42,7 @@ const Products = () => {
       id: "heavy",
       title: "Heavy Petroleum Products",
       icon: Fuel,
+      image: facilityImage,
       description:
         "Fuel oil supply for bunkers, power generation, and refinery feedstocks.",
       products: [
@@ -48,6 +57,7 @@ const Products = () => {
       id: "light",
       title: "Light Petroleum Products",
       icon: Zap,
+      image: dieselImage,
       description:
         "Low emission, environmentally clean diesel and gasoline products suitable for modern engines.",
       products: [
@@ -62,6 +72,7 @@ const Products = () => {
       id: "oils",
       title: "Petroleum Oil",
       icon: Settings,
+      image: oilsImage,
       description:
         "Industrial petroleum oils for various applications, helping improve equipment life and performance.",
       products: [
@@ -73,6 +84,7 @@ const Products = () => {
       ],
     },
   ];
+
 
   return (
     <section id="products" className="py-20 bg-background relative overflow-hidden">
