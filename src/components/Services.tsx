@@ -1,10 +1,14 @@
 import { Card } from "@/components/ui/card";
 import { Package, Truck, HeadphonesIcon } from "lucide-react";
+import tradingImage from "@/assets/trading-trucks.jpg";
+import portImage from "@/assets/logistics-port.jpg";
+import facilityImage from "@/assets/about-facility.jpg";
 
 const Services = () => {
   const services = [
     {
       icon: Package,
+      image: tradingImage,
       title: "Petroleum Trading",
       description:
         "Integrated petroleum trading services with comprehensive and tailor-made business solutions for a wide range of customers. We offer top-quality products in the Agro industry with quality as our utmost priority.",
@@ -12,6 +16,7 @@ const Services = () => {
     },
     {
       icon: Truck,
+      image: portImage,
       title: "Logistics & Finance",
       description:
         "Comprehensive logistics and financing solutions to support your business operations. We ensure timely deliveries and provide flexible financial arrangements.",
@@ -23,6 +28,7 @@ const Services = () => {
     },
     {
       icon: HeadphonesIcon,
+      image: facilityImage,
       title: "Customer Satisfaction",
       description:
         "Our professional team listens to clients and helps them make profitable business decisions. We cater to all business needs with personalized service and support.",
@@ -33,6 +39,7 @@ const Services = () => {
       ],
     },
   ];
+
 
   return (
     <section id="services" className="py-20 bg-muted/30">
