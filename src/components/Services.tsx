@@ -58,9 +58,18 @@ const Services = () => {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="p-8 hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 border-border"
+              className="overflow-hidden hover:shadow-elegant transition-all duration-300 hover:-translate-y-1 border-border"
             >
-              <div className="flex items-start space-x-4">
+              <img
+                src={service.image}
+                alt={`${service.title} - DME Petroleum & Investment`}
+                loading="lazy"
+                width={1280}
+                height={860}
+                className="w-full h-52 object-cover"
+              />
+              <div className="flex items-start space-x-4 p-8">
+
                 <div className="bg-gradient-primary p-4 rounded-lg shrink-0">
                   <service.icon className="h-8 w-8 text-primary-foreground" />
                 </div>
