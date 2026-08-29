@@ -181,6 +181,19 @@ const Products = () => {
               </p>
             </div>
 
+            <div className="overflow-hidden rounded-lg mb-8">
+              <img
+                src={portImage}
+                alt="Cargo vessel loading at an international port terminal"
+                loading="lazy"
+                width={1280}
+                height={860}
+                className="w-full h-56 md:h-80 object-cover"
+              />
+            </div>
+
+
+
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h4 className="text-xl font-semibold mb-4 text-foreground">
